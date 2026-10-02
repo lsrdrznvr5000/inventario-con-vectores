@@ -34,7 +34,7 @@
         listar(){
             let datos="";
             for (let i = 0; i < this.inv.length; i++){
-                datos += `${this.inv[i]}`;
+                datos += this.inv[i].info();
             }
             return datos;
         }
